@@ -1,18 +1,14 @@
 import React from "react";
 import "./App.css";
 import { ContentPlayer } from "./ContentPlayer";
-import { drillContentSingleSelect } from "./data/drillContent";
-import { withSlimStampen } from "./withSlimStampen";
+import { drillContentTextEntry } from "./data/drillContent";
 
 function App() {
   return (
     <div className="App">
       <p>Content Player</p>
       <section>
-        <ContentPlayer
-          item={drillContentSingleSelect}
-          enhance={withSlimStampen}
-        />
+        <ContentPlayer item={drillContentTextEntry} />
       </section>
     </div>
   );
