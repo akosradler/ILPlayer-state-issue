@@ -1,15 +1,860 @@
 export const actualDrillContent = {
+  __typename: "Drilling",
+  latestAttempt: {
+    __typename: "AssignmentAttempt",
+    legacyContentInfo: null,
+    id: "d449f113-8c15-4f1a-a513-caba954154fd",
+    score: 0,
+    status: "Completed",
+    progress: 100,
+    duration: "PT5S",
+    resultTypeCategory: null,
+    cmi5Statements: [
+      {
+        id: "102585f9-2e65-4888-b24f-6b8792b95269",
+        timestamp: "2021-09-16T15:41:40.049Z",
+        actor: {
+          name: "",
+          mbox: null,
+          objectType: "Agent",
+          account: {
+            homePage: "https://identity.noordhoff.nl",
+            name: "328118ef-98bd-4bda-8f3b-9fdbd4ecd029",
+          },
+        },
+        verb: {
+          id: "https://adlnet.gov/expapi/verbs/scored",
+          display: {
+            "nl-NL": null,
+            "en-GB": null,
+            "en-US": null,
+            en: "scored",
+          },
+        },
+        result: {
+          completion: true,
+          success: false,
+          duration: "PT3S",
+          response: {
+            "id-abdf828b-dca3-477f-ca64-1f751597507b": "sdf",
+          },
+          player2State: {
+            particleId:
+              "c7e610d8-d738-48f9-96a4-de559a145d1e_id-ee53936d-db36-4131-f659-6a3068c844d6",
+            answerOptions: [
+              {
+                _id: "id-c41b3d01-cb8c-4dd2-864e-5e71d3305715",
+                _type: "p",
+                children: [
+                  {
+                    _type: "span",
+                    marks: [],
+                    text: "cadmium: ",
+                  },
+                  {
+                    _id: "id-abdf828b-dca3-477f-ca64-1f751597507b",
+                    _type: "answerContentInline",
+                    predefinedAnswer: false,
+                    children: [
+                      {
+                        _type: "span",
+                        marks: [],
+                        text: "Cd",
+                      },
+                    ],
+                    correctResponseFeedback: [],
+                    incorrectResponseFeedback: [],
+                    alternativeAnswers: [],
+                  },
+                ],
+              },
+            ],
+            _type: "textEntry",
+            startingTime: 1631806896926,
+            answer: {
+              "id-abdf828b-dca3-477f-ca64-1f751597507b": "sdf",
+            },
+            score: 0,
+            class: "",
+            evaluation: true,
+            numberOfGaps: 1,
+            isSubmitted: true,
+            isSelfAssessment: false,
+            maxScoreAllowed: 1,
+            isReadyToBeSubmitted: true,
+            duration: 3121,
+            dataForAnalysis: {
+              dict: {},
+              keyStrokes: [
+                {
+                  character: "s",
+                  keyCode: 83,
+                  timeDown: 9439.39999999851,
+                  timeUp: 9653.300000000745,
+                },
+                {
+                  character: "d",
+                  keyCode: 68,
+                  timeDown: 9559.300000000745,
+                  timeUp: 9707.199999999255,
+                },
+                {
+                  character: "f",
+                  keyCode: 70,
+                  timeDown: 9625.199999999255,
+                  timeUp: 9768.300000000745,
+                },
+              ],
+            },
+            isCorrect: {
+              "id-abdf828b-dca3-477f-ca64-1f751597507b": false,
+            },
+            rightAnswers: {
+              "id-abdf828b-dca3-477f-ca64-1f751597507b": "Cd",
+            },
+            accumulatedRetryPenalty: 0.3,
+            submittingTime: 1631806900047,
+            config: {},
+            completed: true,
+            shouldShowRightAnswerRetries: false,
+          },
+          extensions: {
+            "http://xapi.infinitaslearning.com/xapi/extensions/attempts": 0,
+            "http://xapi.infinitaslearning.com/xapi/extensions/interactionType":
+              null,
+            "https://w3id.org/xapi/cmi5/result/extensions/progress": 0,
+            "http://xapi.infinitaslearning.com/xapi/extensions/correctCount": 0,
+            "http://xapi.infinitaslearning.com/xapi/extensions/incorrectCount": 0,
+          },
+          score: {
+            scaled: 0,
+            raw: 0,
+            min: 0,
+            max: 1,
+          },
+        },
+        context: {
+          registration: "d449f113-8c15-4f1a-a513-caba954154fd",
+          contextActivities: {
+            parent: null,
+            category: [
+              {
+                id: "https://w3id.org/xapi/cmi5/context/categories/cmi5",
+                definition: null,
+                objectType: "Activity",
+              },
+            ],
+            grouping: [
+              {
+                id: "http://infinitaslearning.com/types/method/95e29a9b-c284-4849-a60c-6e87cdd82c00",
+              },
+              {
+                id: "d1045e1a-f98f-4ceb-9b8e-3b0e273beb6e",
+              },
+              {
+                id: "85b3ea71-a816-406f-9da7-e763f0683014",
+              },
+              {
+                id: "8f3d56c7-d0f4-482a-a7eb-770ff0c82d62",
+              },
+              {
+                id: "22d40a67-4a37-4702-a1db-5ca762835d29",
+              },
+            ],
+          },
+          extensions: {
+            "https://w3id.org/xapi/cmi5/context/extensions/sessionid":
+              "ri4bnOsqW1Os6ve4WK_BkQ",
+            "http://xapi.infinitaslearning.com/contextactivities/evaluationlogic/":
+              "ilplayer2",
+            "http://xapi.infinitaslearning.com/contextactivities/specification/CMI5":
+              "2016-06",
+            "http://xapi.infinitaslearning.com/contextactivities/specification/ILxAPI":
+              "2018-06",
+          },
+          language: "en-GB",
+          platform: "SE-Platform",
+        },
+        object: {
+          id: "https://icom.infinitas.nl/xapi/activities/contentitemidentifier/c7e610d8-d738-48f9-96a4-de559a145d1e_id-ee53936d-db36-4131-f659-6a3068c844d6",
+          objectType: "Activity",
+          definition: {
+            type: "https://adlnet.gov/expapi/activities/lesson/module",
+            extensions: null,
+            name: {
+              "nl-NL": null,
+              "en-GB": "Text entry drilling 2.0 - with Slim Stampen",
+              "en-US": null,
+            },
+          },
+        },
+        stored: "2021-09-16T15:41:43.1866941",
+        authority: null,
+        version: null,
+        attachments: null,
+      },
+      {
+        id: "3f6c6947-8107-4baf-b2fa-f2948dd3180d",
+        timestamp: "2021-09-16T15:41:40.049Z",
+        actor: {
+          name: "",
+          mbox: null,
+          objectType: "Agent",
+          account: {
+            homePage: "https://identity.noordhoff.nl",
+            name: "328118ef-98bd-4bda-8f3b-9fdbd4ecd029",
+          },
+        },
+        verb: {
+          id: "https://adlnet.gov/expapi/verbs/answered",
+          display: {
+            "nl-NL": null,
+            "en-GB": null,
+            "en-US": null,
+            en: "answered",
+          },
+        },
+        result: {
+          completion: true,
+          success: false,
+          duration: "PT3S",
+          response: {
+            "id-abdf828b-dca3-477f-ca64-1f751597507b": "sdf",
+          },
+          player2State: {
+            particleId:
+              "c7e610d8-d738-48f9-96a4-de559a145d1e_id-ee53936d-db36-4131-f659-6a3068c844d6",
+            answerOptions: [
+              {
+                _id: "id-c41b3d01-cb8c-4dd2-864e-5e71d3305715",
+                _type: "p",
+                children: [
+                  {
+                    _type: "span",
+                    marks: [],
+                    text: "cadmium: ",
+                  },
+                  {
+                    _id: "id-abdf828b-dca3-477f-ca64-1f751597507b",
+                    _type: "answerContentInline",
+                    predefinedAnswer: false,
+                    children: [
+                      {
+                        _type: "span",
+                        marks: [],
+                        text: "Cd",
+                      },
+                    ],
+                    correctResponseFeedback: [],
+                    incorrectResponseFeedback: [],
+                    alternativeAnswers: [],
+                  },
+                ],
+              },
+            ],
+            _type: "textEntry",
+            startingTime: 1631806896926,
+            answer: {
+              "id-abdf828b-dca3-477f-ca64-1f751597507b": "sdf",
+            },
+            score: 0,
+            class: "",
+            evaluation: true,
+            numberOfGaps: 1,
+            isSubmitted: true,
+            isSelfAssessment: false,
+            maxScoreAllowed: 1,
+            isReadyToBeSubmitted: true,
+            duration: 3121,
+            dataForAnalysis: {
+              dict: {},
+              keyStrokes: [
+                {
+                  character: "s",
+                  keyCode: 83,
+                  timeDown: 9439.39999999851,
+                  timeUp: 9653.300000000745,
+                },
+                {
+                  character: "d",
+                  keyCode: 68,
+                  timeDown: 9559.300000000745,
+                  timeUp: 9707.199999999255,
+                },
+                {
+                  character: "f",
+                  keyCode: 70,
+                  timeDown: 9625.199999999255,
+                  timeUp: 9768.300000000745,
+                },
+              ],
+            },
+            isCorrect: {
+              "id-abdf828b-dca3-477f-ca64-1f751597507b": false,
+            },
+            rightAnswers: {
+              "id-abdf828b-dca3-477f-ca64-1f751597507b": "Cd",
+            },
+            accumulatedRetryPenalty: 0.3,
+            submittingTime: 1631806900047,
+            config: {},
+            completed: true,
+            shouldShowRightAnswerRetries: false,
+          },
+          extensions: {
+            "http://xapi.infinitaslearning.com/xapi/extensions/attempts": 0,
+            "http://xapi.infinitaslearning.com/xapi/extensions/interactionType":
+              null,
+            "https://w3id.org/xapi/cmi5/result/extensions/progress": 0,
+            "http://xapi.infinitaslearning.com/xapi/extensions/correctCount": 0,
+            "http://xapi.infinitaslearning.com/xapi/extensions/incorrectCount": 0,
+          },
+          score: {
+            scaled: 0,
+            raw: 0,
+            min: 0,
+            max: 1,
+          },
+        },
+        context: {
+          registration: "d449f113-8c15-4f1a-a513-caba954154fd",
+          contextActivities: {
+            parent: null,
+            category: [
+              {
+                id: "https://w3id.org/xapi/cmi5/context/categories/cmi5",
+                definition: null,
+                objectType: "Activity",
+              },
+            ],
+            grouping: [
+              {
+                id: "http://infinitaslearning.com/types/method/95e29a9b-c284-4849-a60c-6e87cdd82c00",
+              },
+              {
+                id: "d1045e1a-f98f-4ceb-9b8e-3b0e273beb6e",
+              },
+              {
+                id: "85b3ea71-a816-406f-9da7-e763f0683014",
+              },
+              {
+                id: "8f3d56c7-d0f4-482a-a7eb-770ff0c82d62",
+              },
+              {
+                id: "22d40a67-4a37-4702-a1db-5ca762835d29",
+              },
+            ],
+          },
+          extensions: {
+            "https://w3id.org/xapi/cmi5/context/extensions/sessionid":
+              "ri4bnOsqW1Os6ve4WK_BkQ",
+            "http://xapi.infinitaslearning.com/contextactivities/evaluationlogic/":
+              "ilplayer2",
+            "http://xapi.infinitaslearning.com/contextactivities/specification/CMI5":
+              "2016-06",
+            "http://xapi.infinitaslearning.com/contextactivities/specification/ILxAPI":
+              "2018-06",
+          },
+          language: "en-GB",
+          platform: "SE-Platform",
+        },
+        object: {
+          id: "https://icom.infinitas.nl/xapi/activities/contentitemidentifier/c7e610d8-d738-48f9-96a4-de559a145d1e_id-ee53936d-db36-4131-f659-6a3068c844d6",
+          objectType: "Activity",
+          definition: {
+            type: "https://adlnet.gov/expapi/activities/lesson/module",
+            extensions: null,
+            name: {
+              "nl-NL": null,
+              "en-GB": "Text entry drilling 2.0 - with Slim Stampen",
+              "en-US": null,
+            },
+          },
+        },
+        stored: "2021-09-16T15:41:43.1856939",
+        authority: null,
+        version: null,
+        attachments: null,
+      },
+      {
+        id: "64a884ef-6285-433c-b5ba-9a8018e8ba0d",
+        timestamp: "2021-09-16T15:41:36.927Z",
+        actor: {
+          name: "",
+          mbox: null,
+          objectType: "Agent",
+          account: {
+            homePage: "https://identity.noordhoff.nl",
+            name: "328118ef-98bd-4bda-8f3b-9fdbd4ecd029",
+          },
+        },
+        verb: {
+          id: "https://adlnet.gov/expapi/verbs/initialized",
+          display: {
+            "nl-NL": null,
+            "en-GB": null,
+            "en-US": null,
+            en: "initialized",
+          },
+        },
+        result: null,
+        context: {
+          registration: "d449f113-8c15-4f1a-a513-caba954154fd",
+          contextActivities: {
+            parent: null,
+            category: [
+              {
+                id: "https://w3id.org/xapi/cmi5/context/categories/cmi5",
+                definition: null,
+                objectType: "Activity",
+              },
+            ],
+            grouping: [
+              {
+                id: "http://infinitaslearning.com/types/method/95e29a9b-c284-4849-a60c-6e87cdd82c00",
+              },
+              {
+                id: "d1045e1a-f98f-4ceb-9b8e-3b0e273beb6e",
+              },
+              {
+                id: "85b3ea71-a816-406f-9da7-e763f0683014",
+              },
+              {
+                id: "8f3d56c7-d0f4-482a-a7eb-770ff0c82d62",
+              },
+              {
+                id: "22d40a67-4a37-4702-a1db-5ca762835d29",
+              },
+            ],
+          },
+          extensions: {
+            "https://w3id.org/xapi/cmi5/context/extensions/sessionid":
+              "ri4bnOsqW1Os6ve4WK_BkQ",
+            "http://xapi.infinitaslearning.com/contextactivities/evaluationlogic/":
+              "ilplayer2",
+            "http://xapi.infinitaslearning.com/contextactivities/specification/CMI5":
+              "2016-06",
+            "http://xapi.infinitaslearning.com/contextactivities/specification/ILxAPI":
+              "2018-06",
+          },
+          language: "en-GB",
+          platform: "SE-Platform",
+        },
+        object: {
+          id: "https://icom.infinitas.nl/xapi/activities/contentitemidentifier/undefined",
+          objectType: "Activity",
+          definition: {
+            type: "https://adlnet.gov/expapi/activities/lesson/module",
+            extensions: null,
+            name: {
+              "nl-NL": null,
+              "en-GB": "Text entry drilling 2.0 - with Slim Stampen",
+              "en-US": null,
+            },
+          },
+        },
+        stored: "2021-09-16T15:41:43.1856939",
+        authority: null,
+        version: null,
+        attachments: null,
+      },
+      {
+        id: "ae22ac00-ea7a-4ff1-b126-0af804b54c9a",
+        timestamp: "2021-09-16T15:38:37.51Z",
+        actor: {
+          name: "",
+          mbox: null,
+          objectType: "Agent",
+          account: {
+            homePage: "https://identity.noordhoff.nl",
+            name: "328118ef-98bd-4bda-8f3b-9fdbd4ecd029",
+          },
+        },
+        verb: {
+          id: "https://adlnet.gov/expapi/verbs/initialized",
+          display: {
+            "nl-NL": null,
+            "en-GB": null,
+            "en-US": null,
+            en: "initialized",
+          },
+        },
+        result: null,
+        context: {
+          registration: "d449f113-8c15-4f1a-a513-caba954154fd",
+          contextActivities: {
+            parent: null,
+            category: [
+              {
+                id: "https://w3id.org/xapi/cmi5/context/categories/cmi5",
+                definition: null,
+                objectType: "Activity",
+              },
+            ],
+            grouping: [
+              {
+                id: "http://infinitaslearning.com/types/method/95e29a9b-c284-4849-a60c-6e87cdd82c00",
+              },
+              {
+                id: "d1045e1a-f98f-4ceb-9b8e-3b0e273beb6e",
+              },
+              {
+                id: "85b3ea71-a816-406f-9da7-e763f0683014",
+              },
+              {
+                id: "8f3d56c7-d0f4-482a-a7eb-770ff0c82d62",
+              },
+              {
+                id: "22d40a67-4a37-4702-a1db-5ca762835d29",
+              },
+            ],
+          },
+          extensions: {
+            "https://w3id.org/xapi/cmi5/context/extensions/sessionid":
+              "ri4bnOsqW1Os6ve4WK_BkQ",
+            "http://xapi.infinitaslearning.com/contextactivities/evaluationlogic/":
+              "ilplayer2",
+            "http://xapi.infinitaslearning.com/contextactivities/specification/CMI5":
+              "2016-06",
+            "http://xapi.infinitaslearning.com/contextactivities/specification/ILxAPI":
+              "2018-06",
+          },
+          language: "en-GB",
+          platform: "SE-Platform",
+        },
+        object: {
+          id: "https://icom.infinitas.nl/xapi/activities/contentitemidentifier/undefined",
+          objectType: "Activity",
+          definition: {
+            type: "https://adlnet.gov/expapi/activities/lesson/module",
+            extensions: null,
+            name: {
+              "nl-NL": null,
+              "en-GB": "Text entry drilling 2.0 - with Slim Stampen",
+              "en-US": null,
+            },
+          },
+        },
+        stored: "2021-09-16T15:39:38.6787282",
+        authority: null,
+        version: null,
+        attachments: null,
+      },
+      {
+        id: "cd556e5d-d335-4a87-94c8-9798d720d9cd",
+        timestamp: "2021-09-16T15:28:24.138Z",
+        actor: {
+          name: "",
+          mbox: null,
+          objectType: "Agent",
+          account: {
+            homePage: "https://identity.noordhoff.nl",
+            name: "328118ef-98bd-4bda-8f3b-9fdbd4ecd029",
+          },
+        },
+        verb: {
+          id: "https://adlnet.gov/expapi/verbs/initialized",
+          display: {
+            "nl-NL": null,
+            "en-GB": null,
+            "en-US": null,
+            en: "initialized",
+          },
+        },
+        result: null,
+        context: {
+          registration: "d449f113-8c15-4f1a-a513-caba954154fd",
+          contextActivities: {
+            parent: null,
+            category: [
+              {
+                id: "https://w3id.org/xapi/cmi5/context/categories/cmi5",
+                definition: null,
+                objectType: "Activity",
+              },
+            ],
+            grouping: [
+              {
+                id: "http://infinitaslearning.com/types/method/95e29a9b-c284-4849-a60c-6e87cdd82c00",
+              },
+              {
+                id: "d1045e1a-f98f-4ceb-9b8e-3b0e273beb6e",
+              },
+              {
+                id: "85b3ea71-a816-406f-9da7-e763f0683014",
+              },
+              {
+                id: "8f3d56c7-d0f4-482a-a7eb-770ff0c82d62",
+              },
+              {
+                id: "22d40a67-4a37-4702-a1db-5ca762835d29",
+              },
+            ],
+          },
+          extensions: {
+            "https://w3id.org/xapi/cmi5/context/extensions/sessionid":
+              "ri4bnOsqW1Os6ve4WK_BkQ",
+            "http://xapi.infinitaslearning.com/contextactivities/evaluationlogic/":
+              "ilplayer2",
+            "http://xapi.infinitaslearning.com/contextactivities/specification/CMI5":
+              "2016-06",
+            "http://xapi.infinitaslearning.com/contextactivities/specification/ILxAPI":
+              "2018-06",
+          },
+          language: "en-GB",
+          platform: "SE-Platform",
+        },
+        object: {
+          id: "https://icom.infinitas.nl/xapi/activities/contentitemidentifier/undefined",
+          objectType: "Activity",
+          definition: {
+            type: "https://adlnet.gov/expapi/activities/lesson/module",
+            extensions: null,
+            name: {
+              "nl-NL": null,
+              "en-GB": "Text entry drilling 2.0 - with Slim Stampen",
+              "en-US": null,
+            },
+          },
+        },
+        stored: "2021-09-16T15:29:21.0363659",
+        authority: null,
+        version: null,
+        attachments: null,
+      },
+      {
+        id: "f51d66dc-0e91-41e3-8a85-03d006dc09cc",
+        timestamp: "2021-09-16T15:41:42.083Z",
+        actor: {
+          name: "",
+          mbox: null,
+          objectType: "Agent",
+          account: {
+            homePage: "https://identity.noordhoff.nl",
+            name: "328118ef-98bd-4bda-8f3b-9fdbd4ecd029",
+          },
+        },
+        verb: {
+          id: "https://adlnet.gov/expapi/verbs/completed",
+          display: {
+            "nl-NL": null,
+            "en-GB": null,
+            "en-US": null,
+            en: "completed",
+          },
+        },
+        result: {
+          completion: false,
+          success: false,
+          duration: "PT5S",
+          response: null,
+          player2State: {
+            "c7e610d8-d738-48f9-96a4-de559a145d1e_id-ee53936d-db36-4131-f659-6a3068c844d6":
+              {
+                particleId:
+                  "c7e610d8-d738-48f9-96a4-de559a145d1e_id-ee53936d-db36-4131-f659-6a3068c844d6",
+                answerOptions: [
+                  {
+                    _id: "id-c41b3d01-cb8c-4dd2-864e-5e71d3305715",
+                    _type: "p",
+                    children: [
+                      {
+                        _type: "span",
+                        marks: [],
+                        text: "cadmium: ",
+                      },
+                      {
+                        _id: "id-abdf828b-dca3-477f-ca64-1f751597507b",
+                        _type: "answerContentInline",
+                        predefinedAnswer: false,
+                        children: [
+                          {
+                            _type: "span",
+                            marks: [],
+                            text: "Cd",
+                          },
+                        ],
+                        correctResponseFeedback: [],
+                        incorrectResponseFeedback: [],
+                        alternativeAnswers: [],
+                      },
+                    ],
+                  },
+                ],
+                _type: "textEntry",
+                startingTime: 1631806896926,
+                answer: {
+                  "id-abdf828b-dca3-477f-ca64-1f751597507b": "sdf",
+                },
+                score: 0,
+                class: "",
+                evaluation: true,
+                numberOfGaps: 1,
+                isSubmitted: true,
+                isSelfAssessment: false,
+                maxScoreAllowed: 1,
+                isReadyToBeSubmitted: true,
+                duration: 3141,
+                dataForAnalysis: {
+                  keyStrokes: [
+                    {
+                      character: "s",
+                      keyCode: 83,
+                      timeDown: 9439.39999999851,
+                      timeUp: 9653.300000000745,
+                    },
+                    {
+                      character: "d",
+                      keyCode: 68,
+                      timeDown: 9559.300000000745,
+                      timeUp: 9707.199999999255,
+                    },
+                    {
+                      character: "f",
+                      keyCode: 70,
+                      timeDown: 9625.199999999255,
+                      timeUp: 9768.300000000745,
+                    },
+                  ],
+                  factId:
+                    "c7e610d8-d738-48f9-96a4-de559a145d1e_id-ee53936d-db36-4131-f659-6a3068c844d6",
+                  presentationDuration: 3141,
+                  givenResponse: ["sdf"],
+                  correct: false,
+                  reactionTime: 9,
+                  presentationStartTime: 1631806896925,
+                  backSpaceUsed: false,
+                  backSpacedFirstLetter: false,
+                },
+                isCorrect: {
+                  "id-abdf828b-dca3-477f-ca64-1f751597507b": false,
+                },
+                rightAnswers: {
+                  "id-abdf828b-dca3-477f-ca64-1f751597507b": "Cd",
+                },
+                accumulatedRetryPenalty: 0.3,
+                submittingTime: 1631806900047,
+                config: {},
+                completed: true,
+                shouldShowRightAnswerRetries: false,
+              },
+          },
+          extensions: {
+            "http://xapi.infinitaslearning.com/xapi/extensions/attempts": 0,
+            "http://xapi.infinitaslearning.com/xapi/extensions/interactionType":
+              null,
+            "https://w3id.org/xapi/cmi5/result/extensions/progress": 0,
+            "http://xapi.infinitaslearning.com/xapi/extensions/correctCount": 0,
+            "http://xapi.infinitaslearning.com/xapi/extensions/incorrectCount": 1,
+          },
+          score: {
+            scaled: 0,
+            raw: 0,
+            min: 0,
+            max: 1,
+          },
+        },
+        context: {
+          registration: "d449f113-8c15-4f1a-a513-caba954154fd",
+          contextActivities: {
+            parent: null,
+            category: [
+              {
+                id: "https://w3id.org/xapi/cmi5/context/categories/cmi5",
+                definition: null,
+                objectType: "Activity",
+              },
+            ],
+            grouping: [
+              {
+                id: "http://infinitaslearning.com/types/method/95e29a9b-c284-4849-a60c-6e87cdd82c00",
+              },
+              {
+                id: "d1045e1a-f98f-4ceb-9b8e-3b0e273beb6e",
+              },
+              {
+                id: "85b3ea71-a816-406f-9da7-e763f0683014",
+              },
+              {
+                id: "8f3d56c7-d0f4-482a-a7eb-770ff0c82d62",
+              },
+              {
+                id: "22d40a67-4a37-4702-a1db-5ca762835d29",
+              },
+            ],
+          },
+          extensions: {
+            "https://w3id.org/xapi/cmi5/context/extensions/sessionid":
+              "ri4bnOsqW1Os6ve4WK_BkQ",
+            "http://xapi.infinitaslearning.com/contextactivities/evaluationlogic/":
+              "ilplayer2",
+            "http://xapi.infinitaslearning.com/contextactivities/specification/CMI5":
+              "2016-06",
+            "http://xapi.infinitaslearning.com/contextactivities/specification/ILxAPI":
+              "2018-06",
+          },
+          language: "en-GB",
+          platform: "SE-Platform",
+        },
+        object: {
+          id: "https://icom.infinitas.nl/xapi/activities/contentitemidentifier/undefined",
+          objectType: "Activity",
+          definition: {
+            type: "https://adlnet.gov/expapi/activities/lesson/module",
+            extensions: null,
+            name: {
+              "nl-NL": null,
+              "en-GB": "Text entry drilling 2.0 - with Slim Stampen",
+              "en-US": null,
+            },
+          },
+        },
+        stored: "2021-09-16T15:41:43.1866941",
+        authority: null,
+        version: null,
+        attachments: null,
+      },
+    ],
+  },
+  breadcrumbs: [
+    {
+      __typename: "Breadcrumb",
+      id: "d1045e1a-f98f-4ceb-9b8e-3b0e273beb6e",
+      title: "Refset NU SE content Edify to new content model",
+      type: "PACKAGE",
+    },
+    {
+      __typename: "Breadcrumb",
+      id: "85b3ea71-a816-406f-9da7-e763f0683014",
+      title: "2- Math example Edify-CDP-PLP chain",
+      type: "THEME",
+    },
+    {
+      __typename: "Breadcrumb",
+      id: "8f3d56c7-d0f4-482a-a7eb-770ff0c82d62",
+      title: "extraMaterials",
+      type: "EXTRAMATERIALS",
+    },
+    {
+      __typename: "Breadcrumb",
+      id: "22d40a67-4a37-4702-a1db-5ca762835d29",
+      title: "Text entry drilling 2.0 - with Slim Stampen",
+      type: "DRILLING",
+    },
+  ],
   id: "22d40a67-4a37-4702-a1db-5ca762835d29",
   title: "Text entry drilling 2.0 - with Slim Stampen",
   type: "DRILLING",
   subType: null,
   contentSets: [
     {
+      __typename: "ContentSet",
       id: "0f9ab505-10d3-4b25-88b1-800b78190a7d",
       title: "",
       type: "CONTENTSET",
       content: [
         {
+          __typename: "Content",
           id: "0f9ab505-10d3-4b25-88b1-800b78190a7d_id-ee53936d-db36-4131-f659-6a3068c844d6",
           playerPayload: {
             id: "0f9ab505-10d3-4b25-88b1-800b78190a7d_id-ee53936d-db36-4131-f659-6a3068c844d6",
@@ -88,17 +933,17 @@ export const actualDrillContent = {
               assets: [],
             },
           },
-          __typename: "Content",
         },
       ],
-      __typename: "ContentSet",
     },
     {
+      __typename: "ContentSet",
       id: "14f1d1b5-664c-4d78-ad3d-e39f245d160d",
       title: "",
       type: "CONTENTSET",
       content: [
         {
+          __typename: "Content",
           id: "14f1d1b5-664c-4d78-ad3d-e39f245d160d_id-ee53936d-db36-4131-f659-6a3068c844d6",
           playerPayload: {
             id: "14f1d1b5-664c-4d78-ad3d-e39f245d160d_id-ee53936d-db36-4131-f659-6a3068c844d6",
@@ -177,17 +1022,17 @@ export const actualDrillContent = {
               assets: [],
             },
           },
-          __typename: "Content",
         },
       ],
-      __typename: "ContentSet",
     },
     {
+      __typename: "ContentSet",
       id: "dc790d9d-632e-4261-ae7b-802acf63aee5",
       title: "",
       type: "CONTENTSET",
       content: [
         {
+          __typename: "Content",
           id: "dc790d9d-632e-4261-ae7b-802acf63aee5_id-ee53936d-db36-4131-f659-6a3068c844d6",
           playerPayload: {
             id: "dc790d9d-632e-4261-ae7b-802acf63aee5_id-ee53936d-db36-4131-f659-6a3068c844d6",
@@ -266,17 +1111,17 @@ export const actualDrillContent = {
               assets: [],
             },
           },
-          __typename: "Content",
         },
       ],
-      __typename: "ContentSet",
     },
     {
+      __typename: "ContentSet",
       id: "47fc04b2-a568-42da-8b51-8a19ff968806",
       title: "",
       type: "CONTENTSET",
       content: [
         {
+          __typename: "Content",
           id: "47fc04b2-a568-42da-8b51-8a19ff968806_id-ee53936d-db36-4131-f659-6a3068c844d6",
           playerPayload: {
             id: "47fc04b2-a568-42da-8b51-8a19ff968806_id-ee53936d-db36-4131-f659-6a3068c844d6",
@@ -355,17 +1200,17 @@ export const actualDrillContent = {
               assets: [],
             },
           },
-          __typename: "Content",
         },
       ],
-      __typename: "ContentSet",
     },
     {
+      __typename: "ContentSet",
       id: "6d031172-c9d8-49cb-a110-2d7fa831471b",
       title: "",
       type: "CONTENTSET",
       content: [
         {
+          __typename: "Content",
           id: "6d031172-c9d8-49cb-a110-2d7fa831471b_id-ee53936d-db36-4131-f659-6a3068c844d6",
           playerPayload: {
             id: "6d031172-c9d8-49cb-a110-2d7fa831471b_id-ee53936d-db36-4131-f659-6a3068c844d6",
@@ -444,17 +1289,17 @@ export const actualDrillContent = {
               assets: [],
             },
           },
-          __typename: "Content",
         },
       ],
-      __typename: "ContentSet",
     },
     {
+      __typename: "ContentSet",
       id: "89e8e3ef-8d49-4fbf-85df-1cd4916a0eea",
       title: "",
       type: "CONTENTSET",
       content: [
         {
+          __typename: "Content",
           id: "89e8e3ef-8d49-4fbf-85df-1cd4916a0eea_id-ee53936d-db36-4131-f659-6a3068c844d6",
           playerPayload: {
             id: "89e8e3ef-8d49-4fbf-85df-1cd4916a0eea_id-ee53936d-db36-4131-f659-6a3068c844d6",
@@ -533,17 +1378,17 @@ export const actualDrillContent = {
               assets: [],
             },
           },
-          __typename: "Content",
         },
       ],
-      __typename: "ContentSet",
     },
     {
+      __typename: "ContentSet",
       id: "37f0a42f-b869-4fc2-8ea6-17a83d61bbb5",
       title: "",
       type: "CONTENTSET",
       content: [
         {
+          __typename: "Content",
           id: "37f0a42f-b869-4fc2-8ea6-17a83d61bbb5_id-ee53936d-db36-4131-f659-6a3068c844d6",
           playerPayload: {
             id: "37f0a42f-b869-4fc2-8ea6-17a83d61bbb5_id-ee53936d-db36-4131-f659-6a3068c844d6",
@@ -622,17 +1467,17 @@ export const actualDrillContent = {
               assets: [],
             },
           },
-          __typename: "Content",
         },
       ],
-      __typename: "ContentSet",
     },
     {
+      __typename: "ContentSet",
       id: "d28de9df-fa95-4de8-9309-7f5c70275207",
       title: "",
       type: "CONTENTSET",
       content: [
         {
+          __typename: "Content",
           id: "d28de9df-fa95-4de8-9309-7f5c70275207_id-ee53936d-db36-4131-f659-6a3068c844d6",
           playerPayload: {
             id: "d28de9df-fa95-4de8-9309-7f5c70275207_id-ee53936d-db36-4131-f659-6a3068c844d6",
@@ -711,17 +1556,17 @@ export const actualDrillContent = {
               assets: [],
             },
           },
-          __typename: "Content",
         },
       ],
-      __typename: "ContentSet",
     },
     {
+      __typename: "ContentSet",
       id: "c7e610d8-d738-48f9-96a4-de559a145d1e",
       title: "",
       type: "CONTENTSET",
       content: [
         {
+          __typename: "Content",
           id: "c7e610d8-d738-48f9-96a4-de559a145d1e_id-ee53936d-db36-4131-f659-6a3068c844d6",
           playerPayload: {
             id: "c7e610d8-d738-48f9-96a4-de559a145d1e_id-ee53936d-db36-4131-f659-6a3068c844d6",
@@ -800,48 +1645,12 @@ export const actualDrillContent = {
               assets: [],
             },
           },
-          __typename: "Content",
         },
       ],
-      __typename: "ContentSet",
     },
   ],
-  __typename: "Drilling",
-  latestAttempt: {
-    id: "3a376efa-55d3-4220-9322-dcf6a35e058e",
-    score: null,
-    status: "NotStarted",
-    progress: 0,
-    duration: "PT0S",
-    resultTypeCategory: null,
-    cmi5Statements: [],
-    __typename: "AssignmentAttempt",
-    legacyContentInfo: null,
+  metadata: {
+    __typename: "Metadata",
+    slimStampen: true,
   },
-  breadcrumbs: [
-    {
-      id: "d1045e1a-f98f-4ceb-9b8e-3b0e273beb6e",
-      title: "Refset NU SE content Edify to new content model",
-      type: "PACKAGE",
-      __typename: "Breadcrumb",
-    },
-    {
-      id: "85b3ea71-a816-406f-9da7-e763f0683014",
-      title: "2- Math example Edify-CDP-PLP chain",
-      type: "THEME",
-      __typename: "Breadcrumb",
-    },
-    {
-      id: "8f3d56c7-d0f4-482a-a7eb-770ff0c82d62",
-      title: "extraMaterials",
-      type: "EXTRAMATERIALS",
-      __typename: "Breadcrumb",
-    },
-    {
-      id: "22d40a67-4a37-4702-a1db-5ca762835d29",
-      title: "Text entry drilling 2.0 - with Slim Stampen",
-      type: "DRILLING",
-      __typename: "Breadcrumb",
-    },
-  ],
 };

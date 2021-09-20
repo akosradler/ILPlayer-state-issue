@@ -1277,10 +1277,10 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@infinitas/app-player@^8.6.0":
-  version "8.8.0"
-  resolved "https://pkgs.dev.azure.com/infinitas/_packaging/Infinitas/npm/registry/@infinitas/app-player/-/app-player-8.8.0.tgz#266f7cf5ffb427208367905a4f0d8c03c84c56a3"
-  integrity sha1-Jm989f+0JyCDZ5BaTw2MA8hMVqM=
+"@infinitas/app-player@^8.9.0":
+  version "8.9.0"
+  resolved "https://pkgs.dev.azure.com/infinitas/_packaging/Infinitas/npm/registry/@infinitas/app-player/-/app-player-8.9.0.tgz#b6fce079b6bab2cdcbc6134cae96f676d74186ec"
+  integrity sha1-tvzgeba6ss3LxhNMrpb2dtdBhuw=
   dependencies:
     styled-components ">=5.0.0"
 

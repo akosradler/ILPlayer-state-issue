@@ -1,0 +1,11 @@
+export type ContentSetType =
+  | "CONTENTSET"
+  | "INTROEXERCISE"
+  | "INSTRUCTION"
+  | "CONTEXT"
+  | "THEORY"
+  | "LEARNINGGOALS"
+  | "REFERENCE"
+  | "MAINEBOOK"
+  | "ANSWEREBOOK"
+  | "COPYRIGHT";

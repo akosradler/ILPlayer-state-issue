@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.css";
 import { ContentPlayer } from "./ContentPlayer";
-import { drillContentTextEntry } from "./data/drillContent";
+import { actualDrillContent } from "./data/actualDrillContent";
 
 function App() {
   return (
     <div className="App">
       <p>Content Player</p>
       <section>
-        <ContentPlayer item={drillContentTextEntry} />
+        <ContentPlayer item={actualDrillContent} />
       </section>
     </div>
   );

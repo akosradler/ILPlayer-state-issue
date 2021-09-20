@@ -3,38 +3,80 @@ import {
   PlayerListeners,
   PlayerWrapper,
 } from "@infinitas/app-player";
-import React, { useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { SlimStampenSuperSubmitButton } from "./SlimStampenSuperSubmitButton";
+
+const PlayerNextEventSync = "playerNext";
 
 const Player = ({ item }: any): JSX.Element => {
   const [externalHandlers, setExternalHandlers] =
     useState<Omit<PlayerHandlers, "destroy">>();
+  const [currentTopic, setCurrentTopic] = useState<number>(0);
 
-  const handleSupersubmit = () => {
-    console.log("externalHandlers in superSubmit");
-    console.log(externalHandlers);
+  const playerSyncNext = useCallback(() => {
+    if (externalHandlers) {
+      externalHandlers.reset();
+      externalHandlers.updateContent([
+        item.contentSets
+          ?.filter((ig: any) => ig.content?.length)
+          .map((ig: any) =>
+            ig.content!.map((ci: any) => ci.playerPayload as unknown as any)
+          )[currentTopic],
+      ]);
+    }
+  }, [currentTopic, externalHandlers, item.contentSets]);
+
+  useEffect(() => {
+    window.addEventListener(PlayerNextEventSync, playerSyncNext);
+  }, [playerSyncNext]);
+
+  const handleOnNext = () => {
+    window.dispatchEvent(new CustomEvent(PlayerNextEventSync));
+  };
+
+  const handleSubmit = (props: any) => {
+    setCurrentTopic((prev) => prev);
+  };
+
+  const handleSetDataForAnalysis = (data: any) => {
+    if (data.givenResponse) {
+      console.log(data);
+    }
   };
 
   const listeners: PlayerListeners = {
-    onSuperSubmitAnswer: handleSupersubmit,
+    onNext: handleOnNext,
+    onSuperSubmitAnswer: handleSubmit,
+    onSetDataForAnalysis: handleSetDataForAnalysis,
   };
 
   const playerData = useMemo(
     () => ({
       topics:
-        item.contentSets
-          ?.filter((ig: any) => ig.content?.length)
-          .map((ig: any) =>
-            ig.content!.map((ci: any) => ci.playerPayload as unknown as any)
-          ) ?? [],
+        [
+          item.contentSets
+            ?.filter((ig: any) => ig.content?.length)
+            .map((ig: any) =>
+              ig.content!.map((ci: any) => ci.playerPayload as unknown as any)
+            )[currentTopic],
+        ] ?? [],
       interactions: {},
     }),
-    [item.contentSets]
+    [currentTopic, item.contentSets]
   );
 
   return (
     <PlayerWrapper
       id={"constId"}
       key={"constKey"}
+      config={{
+        superSubmitButton: SlimStampenSuperSubmitButton,
+        submitButton: null,
+        collectData: true,
+        retryConfig: {
+          textEntry: 0,
+        },
+      }}
       setExternalHandlers={setExternalHandlers}
       initialData={playerData}
       listeners={listeners}
