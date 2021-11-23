@@ -51,6 +51,7 @@ const Player = ({ item }: any): JSX.Element => {
         } else if (playerNavigator && generalDrillingItem?.contentSets) {
           const currentContentSet =
             generalDrillingItem.contentSets[playerNavigator.current];
+
           if (currentContentSet?.content) {
             externalHandlers.submitAnswer(currentContentSet.content[0].id);
           }
@@ -86,7 +87,7 @@ const Player = ({ item }: any): JSX.Element => {
 
   const playerData = useMemo(() => {
     const topics =
-      item.contentSets
+      generalDrillingItem?.contentSets
         ?.filter((ig: ContentSet) => ig.content?.length)
         .map((ig: ContentSet) =>
           ig.content!.map(
@@ -97,27 +98,29 @@ const Player = ({ item }: any): JSX.Element => {
       topics,
       interactions: {},
     };
-  }, [item]);
+  }, [generalDrillingItem]);
 
   return (
     <>
-      <PlayerWrapper
-        id={"constId"}
-        key={"constKey"}
-        config={{
-          superSubmitButton: SlimStampenSuperSubmitButton,
-          submitButton: null,
-          collectData: true,
-          retryConfig: {
-            textEntry: 0,
-          },
-          flattenTopics: false,
-        }}
-        setExternalHandlers={setExternalHandlers}
-        syncNav={syncNav}
-        initialData={playerData}
-        listeners={listeners}
-      />
+      {generalDrillingItem ? (
+        <PlayerWrapper
+          id={"constId"}
+          key={"constKey"}
+          config={{
+            superSubmitButton: SlimStampenSuperSubmitButton,
+            submitButton: null,
+            collectData: true,
+            retryConfig: {
+              textEntry: 0,
+            },
+            flattenTopics: false,
+          }}
+          setExternalHandlers={setExternalHandlers}
+          syncNav={syncNav}
+          initialData={playerData}
+          listeners={listeners}
+        />
+      ) : null}
       {isSubmitted ? (
         <p>
           Submitted, but the button's text doesn't change on keyboard navigation
