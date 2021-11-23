@@ -1,86 +1,129 @@
 import {
+  AnswerEventProps,
+  NavProps,
+  Particle,
   PlayerHandlers,
   PlayerListeners,
   PlayerWrapper,
 } from "@infinitas/app-player";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { Content, ContentSet } from "./model";
+import { ContentUnit } from "./model/ContentUnit";
 import { SlimStampenSuperSubmitButton } from "./SlimStampenSuperSubmitButton";
+import { useGeneralDrillingContent } from "./useGeneralDrillingContent";
 
-const PlayerNextEventSync = "playerNext";
+export const hasInstructionPage = (item: ContentUnit) =>
+  item.contentSets![0].type === "INSTRUCTION";
 
 const Player = ({ item }: any): JSX.Element => {
   const [externalHandlers, setExternalHandlers] =
     useState<Omit<PlayerHandlers, "destroy">>();
-  const [currentTopic, setCurrentTopic] = useState<number>(0);
+  const [playerNavigator, setPlayerNavigator] = useState<NavProps>();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isOnInstructionPage, setIsOnInstructionPage] = useState(
+    hasInstructionPage(item)
+  );
 
-  const playerSyncNext = useCallback(() => {
-    if (externalHandlers) {
-      externalHandlers.reset();
-      externalHandlers.updateContent([
-        item.contentSets
-          ?.filter((ig: any) => ig.content?.length)
-          .map((ig: any) =>
-            ig.content!.map((ci: any) => ci.playerPayload as unknown as any)
-          )[currentTopic],
-      ]);
+  const setNotInstructionPage = useCallback(
+    () => setIsOnInstructionPage(() => false),
+    []
+  );
+
+  const handleOnNext = useCallback(() => {
+    if (isOnInstructionPage) {
+      setNotInstructionPage();
     }
-  }, [currentTopic, externalHandlers, item.contentSets]);
+    setIsSubmitted(() => false);
+    playerNavigator?.next();
+  }, [isOnInstructionPage, playerNavigator, setNotInstructionPage]);
+
+  const { generalDrillingItem } = useGeneralDrillingContent(item, 2);
 
   useEffect(() => {
-    window.addEventListener(PlayerNextEventSync, playerSyncNext);
-  }, [playerSyncNext]);
+    const listener = (event: KeyboardEvent) => {
+      if (
+        (event.code === "Enter" || event.code === "NumpadEnter") &&
+        externalHandlers
+      ) {
+        event.preventDefault();
+        if (isSubmitted || isOnInstructionPage) {
+          handleOnNext();
+        } else if (playerNavigator && generalDrillingItem?.contentSets) {
+          const currentContentSet =
+            generalDrillingItem.contentSets[playerNavigator.current];
+          if (currentContentSet?.content) {
+            externalHandlers.submitAnswer(currentContentSet.content[0].id);
+          }
+        }
+      }
+    };
+    document.addEventListener("keydown", listener);
+    return () => {
+      document.removeEventListener("keydown", listener);
+    };
+  }, [
+    externalHandlers,
+    generalDrillingItem?.contentSets,
+    handleOnNext,
+    isOnInstructionPage,
+    isSubmitted,
+    playerNavigator,
+  ]);
 
-  const handleOnNext = () => {
-    window.dispatchEvent(new CustomEvent(PlayerNextEventSync));
+  // This is necessary, in order to sync back the Player's React context to the App's
+  const handleOnSubmitAnswer = (event: AnswerEventProps) => {
+    setIsSubmitted(() => true);
   };
 
-  const handleSubmit = (props: any) => {
-    setCurrentTopic((prev) => prev);
-  };
-
-  const handleSetDataForAnalysis = (data: any) => {
-    if (data.givenResponse) {
-      console.log(data);
-    }
+  const syncNav = (navData: NavProps) => {
+    setPlayerNavigator(() => navData);
   };
 
   const listeners: PlayerListeners = {
     onNext: handleOnNext,
-    onSuperSubmitAnswer: handleSubmit,
-    onSetDataForAnalysis: handleSetDataForAnalysis,
+    onSubmitAnswer: handleOnSubmitAnswer,
   };
 
-  const playerData = useMemo(
-    () => ({
-      topics:
-        [
-          item.contentSets
-            ?.filter((ig: any) => ig.content?.length)
-            .map((ig: any) =>
-              ig.content!.map((ci: any) => ci.playerPayload as unknown as any)
-            )[currentTopic],
-        ] ?? [],
+  const playerData = useMemo(() => {
+    const topics =
+      item.contentSets
+        ?.filter((ig: ContentSet) => ig.content?.length)
+        .map((ig: ContentSet) =>
+          ig.content!.map(
+            (ci: Content) => ci.playerPayload as unknown as Particle
+          )
+        ) ?? [];
+    return {
+      topics,
       interactions: {},
-    }),
-    [currentTopic, item.contentSets]
-  );
+    };
+  }, [item]);
 
   return (
-    <PlayerWrapper
-      id={"constId"}
-      key={"constKey"}
-      config={{
-        superSubmitButton: SlimStampenSuperSubmitButton,
-        submitButton: null,
-        collectData: true,
-        retryConfig: {
-          textEntry: 0,
-        },
-      }}
-      setExternalHandlers={setExternalHandlers}
-      initialData={playerData}
-      listeners={listeners}
-    />
+    <>
+      <PlayerWrapper
+        id={"constId"}
+        key={"constKey"}
+        config={{
+          superSubmitButton: SlimStampenSuperSubmitButton,
+          submitButton: null,
+          collectData: true,
+          retryConfig: {
+            textEntry: 0,
+          },
+          flattenTopics: false,
+        }}
+        setExternalHandlers={setExternalHandlers}
+        syncNav={syncNav}
+        initialData={playerData}
+        listeners={listeners}
+      />
+      {isSubmitted ? (
+        <p>
+          Submitted, but the button's text doesn't change on keyboard navigation
+        </p>
+      ) : null}
+    </>
   );
 };
 

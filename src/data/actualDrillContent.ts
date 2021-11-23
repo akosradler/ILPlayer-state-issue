@@ -848,69 +848,24 @@ export const actualDrillContent = {
   subType: null,
   contentSets: [
     {
-      __typename: "ContentSet",
-      id: "0f9ab505-10d3-4b25-88b1-800b78190a7d",
-      title: "",
-      type: "CONTENTSET",
+      id: "82fa5827-435c-48fa-b112-6e199568b029",
+      title: "Remplis",
+      type: "INSTRUCTION",
       content: [
         {
-          __typename: "Content",
-          id: "0f9ab505-10d3-4b25-88b1-800b78190a7d_id-ee53936d-db36-4131-f659-6a3068c844d6",
+          id: "82fa5827-435c-48fa-b112-6e199568b029_id-0c734bbc-ff50-45e7-c312-e0a596ef1ca7",
           playerPayload: {
-            id: "0f9ab505-10d3-4b25-88b1-800b78190a7d_id-ee53936d-db36-4131-f659-6a3068c844d6",
+            id: "82fa5827-435c-48fa-b112-6e199568b029_id-0c734bbc-ff50-45e7-c312-e0a596ef1ca7",
             portableTextContent: {
-              _id: "id-ee53936d-db36-4131-f659-6a3068c844d6",
-              _type: "textEntry",
-              predefinedAnswer: false,
-              flashCard: false,
-              intro: {},
-              instruction: {},
-              instructionFolio: {},
-              question: [
+              _id: "id-0c734bbc-ff50-45e7-c312-e0a596ef1ca7",
+              _type: "p",
+              children: [
                 {
-                  _id: "id-9ded76fc-c104-4dc1-a6b0-43a2e62cdaaf",
-                  _type: "p",
-                  children: [
-                    {
-                      _type: "span",
-                      marks: [],
-                      text: "Vul de naam in van dit element.",
-                    },
-                  ],
+                  _type: "span",
+                  marks: [],
+                  text: "Bij elke nieuwe vraag krijg je eerst het juiste antwoord te zien.",
                 },
               ],
-              explanation: [],
-              answer: [
-                {
-                  _id: "id-cbf50ddf-6585-4dbb-a886-a88200191f63",
-                  _type: "p",
-                  children: [
-                    {
-                      _type: "span",
-                      marks: [],
-                      text: "aluminium:",
-                    },
-                    {
-                      _id: "id-b28c879b-2cc8-4957-df4d-5e48929e95ae",
-                      _type: "answerContentInline",
-                      predefinedAnswer: false,
-                      children: [
-                        {
-                          _type: "span",
-                          marks: [],
-                          text: "Al",
-                        },
-                      ],
-                      correctResponseFeedback: [],
-                      incorrectResponseFeedback: [],
-                      alternativeAnswers: [],
-                    },
-                  ],
-                },
-              ],
-              correctResponseFeedback: {},
-              incorrectResponseFeedback: {},
-              score: 1,
             },
             metadata: {
               deliveryTarget: "",
@@ -928,27 +883,112 @@ export const actualDrillContent = {
               vocabularyLocalLanguage: "",
               endUser: ["learner"],
               isSelfAssessment: false,
-              strictSpelling: false,
               evaluation: true,
               assets: [],
             },
           },
+          class: {
+            local: "",
+            __typename: "ContentClass",
+          },
+          __typename: "Content",
+        },
+        {
+          id: "82fa5827-435c-48fa-b112-6e199568b029_id-c85f8a80-230a-4941-dae4-712e84ac7a36",
+          playerPayload: {
+            id: "82fa5827-435c-48fa-b112-6e199568b029_id-c85f8a80-230a-4941-dae4-712e84ac7a36",
+            portableTextContent: {
+              _id: "id-c85f8a80-230a-4941-dae4-712e84ac7a36",
+              _type: "p",
+              children: [
+                {
+                  _type: "span",
+                  marks: [],
+                  text: "Klik op het antwoord of typ het over. De volgende keer dat je de vraag krijgt, moet je zelf het juiste antwoord geven.",
+                },
+              ],
+            },
+            metadata: {
+              deliveryTarget: "",
+              packageSiteName: "noordhoff-test-site",
+              packageClass: "package",
+              businessUnit: "Noordhoff",
+              discipline: "Engels",
+              edition: ["2"],
+              grade: ["VO"],
+              method: "Componentenboek [method]",
+              schoolType: ["havo"],
+              targetAudienceLanguage: "nl-NL",
+              targetYear: ["1"],
+              vocabularyForeignLanguage: "",
+              vocabularyLocalLanguage: "",
+              endUser: ["learner"],
+              isSelfAssessment: false,
+              evaluation: true,
+              assets: [],
+            },
+          },
+          class: {
+            local: "",
+            __typename: "ContentClass",
+          },
+          __typename: "Content",
+        },
+        {
+          id: "82fa5827-435c-48fa-b112-6e199568b029_id-78a43d92-317a-40c5-9234-428126d351d1",
+          playerPayload: {
+            id: "82fa5827-435c-48fa-b112-6e199568b029_id-78a43d92-317a-40c5-9234-428126d351d1",
+            portableTextContent: {
+              _id: "id-78a43d92-317a-40c5-9234-428126d351d1",
+              _type: "p",
+              children: [
+                {
+                  _type: "span",
+                  marks: [],
+                  text: "Elke vraag moet je twee keer goed beantwoorden.",
+                },
+              ],
+            },
+            metadata: {
+              deliveryTarget: "",
+              packageSiteName: "noordhoff-test-site",
+              packageClass: "package",
+              businessUnit: "Noordhoff",
+              discipline: "Engels",
+              edition: ["2"],
+              grade: ["VO"],
+              method: "Componentenboek [method]",
+              schoolType: ["havo"],
+              targetAudienceLanguage: "nl-NL",
+              targetYear: ["1"],
+              vocabularyForeignLanguage: "",
+              vocabularyLocalLanguage: "",
+              endUser: ["learner"],
+              isSelfAssessment: false,
+              evaluation: true,
+              assets: [],
+            },
+          },
+          class: {
+            local: "",
+            __typename: "ContentClass",
+          },
+          __typename: "Content",
         },
       ],
+      __typename: "ContentSet",
     },
     {
-      __typename: "ContentSet",
-      id: "14f1d1b5-664c-4d78-ad3d-e39f245d160d",
+      id: "e4b96257-d7a2-49cf-86d6-c6ee00588ad1",
       title: "",
       type: "CONTENTSET",
       content: [
         {
-          __typename: "Content",
-          id: "14f1d1b5-664c-4d78-ad3d-e39f245d160d_id-ee53936d-db36-4131-f659-6a3068c844d6",
+          id: "e4b96257-d7a2-49cf-86d6-c6ee00588ad1_id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
           playerPayload: {
-            id: "14f1d1b5-664c-4d78-ad3d-e39f245d160d_id-ee53936d-db36-4131-f659-6a3068c844d6",
+            id: "e4b96257-d7a2-49cf-86d6-c6ee00588ad1_id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
             portableTextContent: {
-              _id: "id-ee53936d-db36-4131-f659-6a3068c844d6",
+              _id: "id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
               _type: "textEntry",
               predefinedAnswer: false,
               flashCard: false,
@@ -957,13 +997,13 @@ export const actualDrillContent = {
               instructionFolio: {},
               question: [
                 {
-                  _id: "id-89c016aa-061e-419b-8e5c-4d1df11a9e58",
+                  _id: "id-227ebcdd-d589-4378-c407-7fcb31c7f09f",
                   _type: "p",
                   children: [
                     {
                       _type: "span",
                       marks: [],
-                      text: "Vul de naam in van dit element.",
+                      text: "Type de juiste vertaling in van",
                     },
                   ],
                 },
@@ -971,23 +1011,44 @@ export const actualDrillContent = {
               explanation: [],
               answer: [
                 {
-                  _id: "id-a2b15890-e54b-4120-988d-1872aa201a4c",
+                  _type: "audio",
+                  _id: "id-7e0244c0-1a8f-49ec-8b29-e13b8d07955e",
+                  content: {
+                    _id: "id-b8fd1097-9340-4a0b-ab79-b1f3b10693c7",
+                    _type: "audioInline",
+                    xtrf: "elasticsearch$edify-casper.prd-noordhoff.cd756ec8-8788-47f2-ae63-de20eaac392b",
+                    data: "https://numsprd-euwe.streaming.media.azure.net/65ea8327-4dce-46c4-a584-06aae6011c84/58b6aa98-0e50-43d6-a819-c8e770e1.ism/manifest",
+                  },
+                },
+                {
+                  _type: "image",
+                  _id: "id-022595a4-9ed3-484c-b9e5-1ac2d5966e94",
+                  content: {
+                    _id: "id-e1b62d6d-a06f-4961-9082-6c56f8abc9a1",
+                    _type: "imageInline",
+                    alt: "",
+                    href: "https://damapi-assets.edify.noordhoff.nl/image-output/edify-casper.prd-noordhoff.e0e1882b-9515-453b-9c65-e3ae16f2144d/fontopreview.jpeg?lastmodified=1631718307952",
+                    xtrf: "elasticsearch$edify-casper.prd-noordhoff.e0e1882b-9515-453b-9c65-e3ae16f2144d",
+                  },
+                },
+                {
+                  _id: "id-e49fcd90-021a-4288-c68e-4eec05f29985",
                   _type: "p",
                   children: [
                     {
                       _type: "span",
                       marks: [],
-                      text: "argon: ",
+                      text: "natuurlijk ",
                     },
                     {
-                      _id: "id-a245e97b-1b64-4393-8203-fe391ce67941",
+                      _id: "id-7094804e-e159-48f6-ce07-9fa9ee503f82",
                       _type: "answerContentInline",
                       predefinedAnswer: false,
                       children: [
                         {
                           _type: "span",
                           marks: [],
-                          text: "Ar",
+                          text: "bien sûr",
                         },
                       ],
                       correctResponseFeedback: [],
@@ -1018,26 +1079,32 @@ export const actualDrillContent = {
               endUser: ["learner"],
               isSelfAssessment: false,
               strictSpelling: false,
+              ignorePunctions: false,
+              caseSensitive: false,
               evaluation: true,
               assets: [],
             },
           },
+          class: {
+            local: "",
+            __typename: "ContentClass",
+          },
+          __typename: "Content",
         },
       ],
+      __typename: "ContentSet",
     },
     {
-      __typename: "ContentSet",
-      id: "dc790d9d-632e-4261-ae7b-802acf63aee5",
+      id: "424057e0-c096-4861-ae16-4d976d61031c",
       title: "",
       type: "CONTENTSET",
       content: [
         {
-          __typename: "Content",
-          id: "dc790d9d-632e-4261-ae7b-802acf63aee5_id-ee53936d-db36-4131-f659-6a3068c844d6",
+          id: "424057e0-c096-4861-ae16-4d976d61031c_id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
           playerPayload: {
-            id: "dc790d9d-632e-4261-ae7b-802acf63aee5_id-ee53936d-db36-4131-f659-6a3068c844d6",
+            id: "424057e0-c096-4861-ae16-4d976d61031c_id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
             portableTextContent: {
-              _id: "id-ee53936d-db36-4131-f659-6a3068c844d6",
+              _id: "id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
               _type: "textEntry",
               predefinedAnswer: false,
               flashCard: false,
@@ -1046,13 +1113,13 @@ export const actualDrillContent = {
               instructionFolio: {},
               question: [
                 {
-                  _id: "id-9f900e9a-dd84-4ed7-ef74-39615ec52fbf",
+                  _id: "id-3a010912-ced9-4df2-f80b-d9a10b9627f7",
                   _type: "p",
                   children: [
                     {
                       _type: "span",
                       marks: [],
-                      text: "Vul de naam in van dit element.",
+                      text: "Type de juiste vertaling in van",
                     },
                   ],
                 },
@@ -1060,23 +1127,44 @@ export const actualDrillContent = {
               explanation: [],
               answer: [
                 {
-                  _id: "id-95890438-134b-4d2a-bb27-b49713ecdcfb",
+                  _type: "audio",
+                  _id: "id-196035f6-aa8f-4706-f357-1061dbed442d",
+                  content: {
+                    _id: "id-7e3f347b-ecd2-479d-e24a-9dc35790fe94",
+                    _type: "audioInline",
+                    xtrf: "elasticsearch$edify-casper.prd-noordhoff.6741798d-e0e8-4f57-b5ae-61c11955a31b",
+                    data: "https://numsprd-euwe.streaming.media.azure.net/7bc79f57-a751-46b7-ab7b-4064087480f7/e7e1d0ca-df2d-497e-a78c-093dddb0.ism/manifest",
+                  },
+                },
+                {
+                  _type: "image",
+                  _id: "id-cf91ba7d-632a-4bad-9871-b6fc6d2127df",
+                  content: {
+                    _id: "id-a3a7004a-80ef-4793-ea5d-acfd374b2ebb",
+                    _type: "imageInline",
+                    alt: "",
+                    href: "https://damapi-assets.edify.noordhoff.nl/image-output/edify-casper.prd-noordhoff.1ae0e65b-8c7d-49e3-baa8-83645bad76f3/fontopreview.jpeg?lastmodified=1631717996523",
+                    xtrf: "elasticsearch$edify-casper.prd-noordhoff.1ae0e65b-8c7d-49e3-baa8-83645bad76f3",
+                  },
+                },
+                {
+                  _id: "id-5d56f67a-5312-4f7d-94af-778a2527470b",
                   _type: "p",
                   children: [
                     {
                       _type: "span",
                       marks: [],
-                      text: "arseen: ",
+                      text: "zoeken ",
                     },
                     {
-                      _id: "id-ec11ea09-fe5d-4d59-c8fd-932a198882f4",
+                      _id: "id-7094804e-e159-48f6-ce07-9fa9ee503f82",
                       _type: "answerContentInline",
                       predefinedAnswer: false,
                       children: [
                         {
                           _type: "span",
                           marks: [],
-                          text: "As",
+                          text: "chercher",
                         },
                       ],
                       correctResponseFeedback: [],
@@ -1106,27 +1194,30 @@ export const actualDrillContent = {
               vocabularyLocalLanguage: "",
               endUser: ["learner"],
               isSelfAssessment: false,
-              strictSpelling: false,
               evaluation: true,
               assets: [],
             },
           },
+          class: {
+            local: "",
+            __typename: "ContentClass",
+          },
+          __typename: "Content",
         },
       ],
+      __typename: "ContentSet",
     },
     {
-      __typename: "ContentSet",
-      id: "47fc04b2-a568-42da-8b51-8a19ff968806",
+      id: "da1bf86d-7102-43a6-a71a-0a9466172040",
       title: "",
       type: "CONTENTSET",
       content: [
         {
-          __typename: "Content",
-          id: "47fc04b2-a568-42da-8b51-8a19ff968806_id-ee53936d-db36-4131-f659-6a3068c844d6",
+          id: "da1bf86d-7102-43a6-a71a-0a9466172040_id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
           playerPayload: {
-            id: "47fc04b2-a568-42da-8b51-8a19ff968806_id-ee53936d-db36-4131-f659-6a3068c844d6",
+            id: "da1bf86d-7102-43a6-a71a-0a9466172040_id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
             portableTextContent: {
-              _id: "id-ee53936d-db36-4131-f659-6a3068c844d6",
+              _id: "id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
               _type: "textEntry",
               predefinedAnswer: false,
               flashCard: false,
@@ -1135,13 +1226,13 @@ export const actualDrillContent = {
               instructionFolio: {},
               question: [
                 {
-                  _id: "id-cb2af016-7ae1-42f8-b366-52cf70a3e528",
+                  _id: "id-83cbced4-8bbb-4b0d-d0ae-76b979623b4b",
                   _type: "p",
                   children: [
                     {
                       _type: "span",
                       marks: [],
-                      text: "Vul de naam in van dit element.",
+                      text: "Type de juiste vertaling in van",
                     },
                   ],
                 },
@@ -1149,23 +1240,44 @@ export const actualDrillContent = {
               explanation: [],
               answer: [
                 {
-                  _id: "id-226e690f-ed7c-4814-a243-de527d6abb57",
+                  _type: "audio",
+                  _id: "id-ee26a73b-13b1-4f62-d39f-da1c86b50de6",
+                  content: {
+                    _id: "id-801e142a-ad69-4a5e-d52a-72aaf185c57b",
+                    _type: "audioInline",
+                    xtrf: "elasticsearch$edify-casper.prd-noordhoff.f496172e-eb67-48b6-942e-464b4a7d3567",
+                    data: "https://numsprd-euwe.streaming.media.azure.net/2eab1bf4-245c-4927-a903-f40f7ebfa064/2ddbc0f4-fa96-4b57-8d55-070d8e38.ism/manifest",
+                  },
+                },
+                {
+                  _type: "image",
+                  _id: "id-725d3d4f-a770-4a0c-fd2b-8a56bf821b2d",
+                  content: {
+                    _id: "id-b90c5ae5-87c1-4d88-fe44-ee8b6a8ef423",
+                    _type: "imageInline",
+                    alt: "",
+                    href: "https://damapi-assets.edify.noordhoff.nl/image-output/edify-casper.prd-noordhoff.365013f6-eedb-4a4d-ba09-1e361884f0a8/fontopreview.jpeg?lastmodified=1631718073986",
+                    xtrf: "elasticsearch$edify-casper.prd-noordhoff.365013f6-eedb-4a4d-ba09-1e361884f0a8",
+                  },
+                },
+                {
+                  _id: "id-405f0801-8fc5-4344-b1e9-d5045b8084fd",
                   _type: "p",
                   children: [
                     {
                       _type: "span",
                       marks: [],
-                      text: "barium: ",
+                      text: "de bed and breakfast ",
                     },
                     {
-                      _id: "id-28500298-9879-44f0-f99e-ef9ea42144ef",
+                      _id: "id-7094804e-e159-48f6-ce07-9fa9ee503f82",
                       _type: "answerContentInline",
                       predefinedAnswer: false,
                       children: [
                         {
                           _type: "span",
                           marks: [],
-                          text: "Ba",
+                          text: "la chambre d'hôte",
                         },
                       ],
                       correctResponseFeedback: [],
@@ -1196,26 +1308,32 @@ export const actualDrillContent = {
               endUser: ["learner"],
               isSelfAssessment: false,
               strictSpelling: false,
+              ignorePunctions: false,
+              caseSensitive: false,
               evaluation: true,
               assets: [],
             },
           },
+          class: {
+            local: "",
+            __typename: "ContentClass",
+          },
+          __typename: "Content",
         },
       ],
+      __typename: "ContentSet",
     },
     {
-      __typename: "ContentSet",
-      id: "6d031172-c9d8-49cb-a110-2d7fa831471b",
+      id: "67a9aa4a-ea51-48e7-98f0-ceaf27fa2bc4",
       title: "",
       type: "CONTENTSET",
       content: [
         {
-          __typename: "Content",
-          id: "6d031172-c9d8-49cb-a110-2d7fa831471b_id-ee53936d-db36-4131-f659-6a3068c844d6",
+          id: "67a9aa4a-ea51-48e7-98f0-ceaf27fa2bc4_id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
           playerPayload: {
-            id: "6d031172-c9d8-49cb-a110-2d7fa831471b_id-ee53936d-db36-4131-f659-6a3068c844d6",
+            id: "67a9aa4a-ea51-48e7-98f0-ceaf27fa2bc4_id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
             portableTextContent: {
-              _id: "id-ee53936d-db36-4131-f659-6a3068c844d6",
+              _id: "id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
               _type: "textEntry",
               predefinedAnswer: false,
               flashCard: false,
@@ -1224,13 +1342,13 @@ export const actualDrillContent = {
               instructionFolio: {},
               question: [
                 {
-                  _id: "id-7e0c5eeb-c47c-4ea7-d960-4556d543a7b8",
+                  _id: "id-23368c92-ec26-4cc9-f28a-d3b857188e3a",
                   _type: "p",
                   children: [
                     {
                       _type: "span",
                       marks: [],
-                      text: "Vul de naam in van dit element.",
+                      text: "Type de juiste vertaling in van",
                     },
                   ],
                 },
@@ -1238,23 +1356,59 @@ export const actualDrillContent = {
               explanation: [],
               answer: [
                 {
-                  _id: "id-3e9ecf66-4f9b-4c84-8beb-05e64d685f12",
+                  _type: "audio",
+                  _id: "id-5fb1681b-a968-4d62-d022-83ddd7aaf58e",
+                  content: {
+                    _id: "id-667e1e2a-6016-464f-bb57-418af235c06c",
+                    _type: "audioInline",
+                    xtrf: "elasticsearch$edify-casper.prd-noordhoff.3a6b8ffb-aee3-4dff-8155-d9362ab95a74",
+                    data: "https://numsprd-euwe.streaming.media.azure.net/01fbd2c8-acc1-460a-9230-be2dce008d31/908c2192-75d8-49a1-9c1a-761b5c84.ism/manifest",
+                  },
+                },
+                {
+                  _type: "image",
+                  _id: "id-17e91bdd-63ca-44eb-9f18-d4623dfd4ad9",
+                  content: {
+                    _id: "id-6e98187f-b2b4-44cd-8fa5-64ff23274d94",
+                    _type: "imageInline",
+                    alt: "",
+                    href: "https://damapi-assets.edify.noordhoff.nl/image-output/edify-casper.prd-noordhoff.1cf71ede-cd96-4393-ae58-c3181c2c8d64/fontopreview.jpeg?lastmodified=1631782927788",
+                    xtrf: "elasticsearch$edify-casper.prd-noordhoff.1cf71ede-cd96-4393-ae58-c3181c2c8d64",
+                  },
+                },
+                {
+                  _id: "id-af7f7410-696b-4d04-84bb-3dc5fb861c75",
+                  _type: "p",
+                  children: [],
+                },
+                {
+                  _id: "id-35111357-3058-432a-98eb-28d568e947e4",
                   _type: "p",
                   children: [
                     {
                       _type: "span",
                       marks: [],
-                      text: "beryllium: ",
+                      text: "een ",
                     },
                     {
-                      _id: "id-d10e1936-d51b-4e74-cc17-70b0cf0b4812",
+                      _type: "span",
+                      marks: ["bold"],
+                      text: "hekel hebben",
+                    },
+                    {
+                      _type: "span",
+                      marks: [],
+                      text: " aan ",
+                    },
+                    {
+                      _id: "id-7094804e-e159-48f6-ce07-9fa9ee503f82",
                       _type: "answerContentInline",
                       predefinedAnswer: false,
                       children: [
                         {
                           _type: "span",
                           marks: [],
-                          text: "Be",
+                          text: "détester",
                         },
                       ],
                       correctResponseFeedback: [],
@@ -1284,27 +1438,30 @@ export const actualDrillContent = {
               vocabularyLocalLanguage: "",
               endUser: ["learner"],
               isSelfAssessment: false,
-              strictSpelling: false,
               evaluation: true,
               assets: [],
             },
           },
+          class: {
+            local: "",
+            __typename: "ContentClass",
+          },
+          __typename: "Content",
         },
       ],
+      __typename: "ContentSet",
     },
     {
-      __typename: "ContentSet",
-      id: "89e8e3ef-8d49-4fbf-85df-1cd4916a0eea",
+      id: "8b5ad1e6-9321-40bc-ba6f-a47e707a649b",
       title: "",
       type: "CONTENTSET",
       content: [
         {
-          __typename: "Content",
-          id: "89e8e3ef-8d49-4fbf-85df-1cd4916a0eea_id-ee53936d-db36-4131-f659-6a3068c844d6",
+          id: "8b5ad1e6-9321-40bc-ba6f-a47e707a649b_id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
           playerPayload: {
-            id: "89e8e3ef-8d49-4fbf-85df-1cd4916a0eea_id-ee53936d-db36-4131-f659-6a3068c844d6",
+            id: "8b5ad1e6-9321-40bc-ba6f-a47e707a649b_id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
             portableTextContent: {
-              _id: "id-ee53936d-db36-4131-f659-6a3068c844d6",
+              _id: "id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
               _type: "textEntry",
               predefinedAnswer: false,
               flashCard: false,
@@ -1313,13 +1470,13 @@ export const actualDrillContent = {
               instructionFolio: {},
               question: [
                 {
-                  _id: "id-415e414c-db46-45e9-c640-ba6256fbc8cf",
+                  _id: "id-0509ae8d-c328-4241-a41a-fe651731d360",
                   _type: "p",
                   children: [
                     {
                       _type: "span",
                       marks: [],
-                      text: "Vul de naam in van dit element.",
+                      text: "Type de juiste vertaling in van",
                     },
                   ],
                 },
@@ -1327,23 +1484,44 @@ export const actualDrillContent = {
               explanation: [],
               answer: [
                 {
-                  _id: "id-f7d67ec3-52a2-4a0f-cbab-6e4f723490bf",
+                  _type: "audio",
+                  _id: "id-bc17c999-dfd9-4d0e-ffb4-5ed3f1fd92d8",
+                  content: {
+                    _id: "id-6e989eb1-5e62-4e47-e999-e79631a39301",
+                    _type: "audioInline",
+                    xtrf: "elasticsearch$edify-casper.prd-noordhoff.5ab79095-fcdd-413b-979e-b373486409d3",
+                    data: "https://numsprd-euwe.streaming.media.azure.net/229d49c9-8a5d-4dce-852f-0e8988488c44/2f476d0d-fd32-4a29-ae37-38da5015.ism/manifest",
+                  },
+                },
+                {
+                  _type: "image",
+                  _id: "id-4c450fc0-4437-4f56-bbcd-a50a78c57dbc",
+                  content: {
+                    _id: "id-3457a262-03f6-4d84-dbc2-d8088ded7107",
+                    _type: "imageInline",
+                    alt: "",
+                    href: "https://damapi-assets.edify.noordhoff.nl/image-output/edify-casper.prd-noordhoff.804fe113-b1a4-48c3-95c7-84a4c70e7427/fontopreview.jpeg?lastmodified=1631782472104",
+                    xtrf: "elasticsearch$edify-casper.prd-noordhoff.804fe113-b1a4-48c3-95c7-84a4c70e7427",
+                  },
+                },
+                {
+                  _id: "id-068d943a-0c1f-43f0-89d8-131bd8137eac",
                   _type: "p",
                   children: [
                     {
                       _type: "span",
                       marks: [],
-                      text: "boor: ",
+                      text: "waarom ",
                     },
                     {
-                      _id: "id-a04ac3d5-c3dc-4b80-d674-a339bd5c06bb",
+                      _id: "id-7094804e-e159-48f6-ce07-9fa9ee503f82",
                       _type: "answerContentInline",
                       predefinedAnswer: false,
                       children: [
                         {
                           _type: "span",
                           marks: [],
-                          text: "B",
+                          text: "pourquoi",
                         },
                       ],
                       correctResponseFeedback: [],
@@ -1374,26 +1552,32 @@ export const actualDrillContent = {
               endUser: ["learner"],
               isSelfAssessment: false,
               strictSpelling: false,
+              ignorePunctions: false,
+              caseSensitive: false,
               evaluation: true,
               assets: [],
             },
           },
+          class: {
+            local: "",
+            __typename: "ContentClass",
+          },
+          __typename: "Content",
         },
       ],
+      __typename: "ContentSet",
     },
     {
-      __typename: "ContentSet",
-      id: "37f0a42f-b869-4fc2-8ea6-17a83d61bbb5",
+      id: "d02d2e81-19c8-453b-a46f-44f7805b1d4b",
       title: "",
       type: "CONTENTSET",
       content: [
         {
-          __typename: "Content",
-          id: "37f0a42f-b869-4fc2-8ea6-17a83d61bbb5_id-ee53936d-db36-4131-f659-6a3068c844d6",
+          id: "d02d2e81-19c8-453b-a46f-44f7805b1d4b_id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
           playerPayload: {
-            id: "37f0a42f-b869-4fc2-8ea6-17a83d61bbb5_id-ee53936d-db36-4131-f659-6a3068c844d6",
+            id: "d02d2e81-19c8-453b-a46f-44f7805b1d4b_id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
             portableTextContent: {
-              _id: "id-ee53936d-db36-4131-f659-6a3068c844d6",
+              _id: "id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
               _type: "textEntry",
               predefinedAnswer: false,
               flashCard: false,
@@ -1402,13 +1586,13 @@ export const actualDrillContent = {
               instructionFolio: {},
               question: [
                 {
-                  _id: "id-f13922ab-f101-4dc3-e2c9-7e7df6814c1e",
+                  _id: "id-38a36925-2b47-4552-8aa8-f85079701cdc",
                   _type: "p",
                   children: [
                     {
                       _type: "span",
                       marks: [],
-                      text: "Vul de naam in van dit element.",
+                      text: "Type de juiste vertaling in van",
                     },
                   ],
                 },
@@ -1416,23 +1600,44 @@ export const actualDrillContent = {
               explanation: [],
               answer: [
                 {
-                  _id: "id-60b2a539-74e6-4c2e-c1d4-89eeab1d872d",
+                  _type: "audio",
+                  _id: "id-42a2cef0-6e2e-4e3f-c2aa-57d6e4731d10",
+                  content: {
+                    _id: "id-5670de67-9f35-4994-d8c5-022785ad3578",
+                    _type: "audioInline",
+                    xtrf: "elasticsearch$edify-casper.prd-noordhoff.d9f6c3f7-004d-4622-9e39-d7856ec8a125",
+                    data: "https://numsprd-euwe.streaming.media.azure.net/44865197-79d5-45f6-bd73-a9025a3a13c9/a7ef66e2-71a6-481c-990c-52b476a8.ism/manifest",
+                  },
+                },
+                {
+                  _type: "image",
+                  _id: "id-b0b2618d-53ab-47de-e262-2e60e7d72a0f",
+                  content: {
+                    _id: "id-b2ea1781-cbbd-424c-b77c-95981b685e1f",
+                    _type: "imageInline",
+                    alt: "",
+                    href: "https://damapi-assets.edify.noordhoff.nl/image-output/edify-casper.prd-noordhoff.db807e91-3913-43ef-94e6-04fe86077965/fontopreview.jpeg?lastmodified=1631782557835",
+                    xtrf: "elasticsearch$edify-casper.prd-noordhoff.db807e91-3913-43ef-94e6-04fe86077965",
+                  },
+                },
+                {
+                  _id: "id-d5263b24-78a4-4ac7-e8fc-857cbfa67c04",
                   _type: "p",
                   children: [
                     {
                       _type: "span",
                       marks: [],
-                      text: "broom:",
+                      text: "kamperen ",
                     },
                     {
-                      _id: "id-9403bfd3-0030-4f4b-ac2c-c104e076da06",
+                      _id: "id-7094804e-e159-48f6-ce07-9fa9ee503f82",
                       _type: "answerContentInline",
                       predefinedAnswer: false,
                       children: [
                         {
                           _type: "span",
                           marks: [],
-                          text: "Br",
+                          text: "Faire du camping",
                         },
                       ],
                       correctResponseFeedback: [],
@@ -1462,27 +1667,30 @@ export const actualDrillContent = {
               vocabularyLocalLanguage: "",
               endUser: ["learner"],
               isSelfAssessment: false,
-              strictSpelling: false,
               evaluation: true,
               assets: [],
             },
           },
+          class: {
+            local: "",
+            __typename: "ContentClass",
+          },
+          __typename: "Content",
         },
       ],
+      __typename: "ContentSet",
     },
     {
-      __typename: "ContentSet",
-      id: "d28de9df-fa95-4de8-9309-7f5c70275207",
+      id: "5075a6b6-dd1d-4ca9-a69d-6895a90cf4f5",
       title: "",
       type: "CONTENTSET",
       content: [
         {
-          __typename: "Content",
-          id: "d28de9df-fa95-4de8-9309-7f5c70275207_id-ee53936d-db36-4131-f659-6a3068c844d6",
+          id: "5075a6b6-dd1d-4ca9-a69d-6895a90cf4f5_id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
           playerPayload: {
-            id: "d28de9df-fa95-4de8-9309-7f5c70275207_id-ee53936d-db36-4131-f659-6a3068c844d6",
+            id: "5075a6b6-dd1d-4ca9-a69d-6895a90cf4f5_id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
             portableTextContent: {
-              _id: "id-ee53936d-db36-4131-f659-6a3068c844d6",
+              _id: "id-15bf8da7-6d21-4b18-cb95-323a99fe73fc",
               _type: "textEntry",
               predefinedAnswer: false,
               flashCard: false,
@@ -1491,13 +1699,13 @@ export const actualDrillContent = {
               instructionFolio: {},
               question: [
                 {
-                  _id: "id-cf0c084b-cae7-456d-c314-cf4c6ffb3b70",
+                  _id: "id-60f8f07f-6ffc-4351-d132-d8c3905936a3",
                   _type: "p",
                   children: [
                     {
                       _type: "span",
                       marks: [],
-                      text: "Vul de naam in van dit element.",
+                      text: "Type de juiste vertaling in van",
                     },
                   ],
                 },
@@ -1505,23 +1713,44 @@ export const actualDrillContent = {
               explanation: [],
               answer: [
                 {
-                  _id: "id-9eb3f245-ced4-49ac-ee3a-8642ab38db4d",
+                  _type: "audio",
+                  _id: "id-80632cf3-836b-4266-8db6-998ea1c39fe8",
+                  content: {
+                    _id: "id-d08de76b-abbf-4085-a730-e26098f35669",
+                    _type: "audioInline",
+                    xtrf: "elasticsearch$edify-casper.prd-noordhoff.d1827e5a-4fc0-4819-8c22-74182b69ec91",
+                    data: "https://numsprd-euwe.streaming.media.azure.net/7e4143a3-df0a-4366-9586-8eaba1b469f5/71784497-4b8b-4a14-a624-41ec33e8.ism/manifest",
+                  },
+                },
+                {
+                  _type: "image",
+                  _id: "id-95cc157c-4bc4-47a8-a6e5-acaed70b2892",
+                  content: {
+                    _id: "id-1d5ec58c-1163-43f6-cc28-9f1e5573e997",
+                    _type: "imageInline",
+                    alt: "",
+                    href: "https://damapi-assets.edify.noordhoff.nl/image-output/edify-casper.prd-noordhoff.294ab5f5-19a6-4ee9-9845-ce8d4ec662ed/fontopreview.jpeg?lastmodified=1631782733459",
+                    xtrf: "elasticsearch$edify-casper.prd-noordhoff.294ab5f5-19a6-4ee9-9845-ce8d4ec662ed",
+                  },
+                },
+                {
+                  _id: "id-a451d38a-a68e-4006-94eb-32d12f957b93",
                   _type: "p",
                   children: [
                     {
                       _type: "span",
                       marks: [],
-                      text: "calcium: ",
+                      text: "vragen ",
                     },
                     {
-                      _id: "id-80b76347-6446-4a16-9b62-411cd5261f45",
+                      _id: "id-7094804e-e159-48f6-ce07-9fa9ee503f82",
                       _type: "answerContentInline",
                       predefinedAnswer: false,
                       children: [
                         {
                           _type: "span",
                           marks: [],
-                          text: "Ca",
+                          text: "demander",
                         },
                       ],
                       correctResponseFeedback: [],
@@ -1552,101 +1781,20 @@ export const actualDrillContent = {
               endUser: ["learner"],
               isSelfAssessment: false,
               strictSpelling: false,
+              ignorePunctions: false,
+              caseSensitive: false,
               evaluation: true,
               assets: [],
             },
           },
-        },
-      ],
-    },
-    {
-      __typename: "ContentSet",
-      id: "c7e610d8-d738-48f9-96a4-de559a145d1e",
-      title: "",
-      type: "CONTENTSET",
-      content: [
-        {
+          class: {
+            local: "",
+            __typename: "ContentClass",
+          },
           __typename: "Content",
-          id: "c7e610d8-d738-48f9-96a4-de559a145d1e_id-ee53936d-db36-4131-f659-6a3068c844d6",
-          playerPayload: {
-            id: "c7e610d8-d738-48f9-96a4-de559a145d1e_id-ee53936d-db36-4131-f659-6a3068c844d6",
-            portableTextContent: {
-              _id: "id-ee53936d-db36-4131-f659-6a3068c844d6",
-              _type: "textEntry",
-              predefinedAnswer: false,
-              flashCard: false,
-              intro: {},
-              instruction: {},
-              instructionFolio: {},
-              question: [
-                {
-                  _id: "id-0609244a-62d5-4f93-f9a7-f626c12f9961",
-                  _type: "p",
-                  children: [
-                    {
-                      _type: "span",
-                      marks: [],
-                      text: "Vul de naam in van dit element.",
-                    },
-                  ],
-                },
-              ],
-              explanation: [],
-              answer: [
-                {
-                  _id: "id-c41b3d01-cb8c-4dd2-864e-5e71d3305715",
-                  _type: "p",
-                  children: [
-                    {
-                      _type: "span",
-                      marks: [],
-                      text: "cadmium: ",
-                    },
-                    {
-                      _id: "id-abdf828b-dca3-477f-ca64-1f751597507b",
-                      _type: "answerContentInline",
-                      predefinedAnswer: false,
-                      children: [
-                        {
-                          _type: "span",
-                          marks: [],
-                          text: "Cd",
-                        },
-                      ],
-                      correctResponseFeedback: [],
-                      incorrectResponseFeedback: [],
-                      alternativeAnswers: [],
-                    },
-                  ],
-                },
-              ],
-              correctResponseFeedback: {},
-              incorrectResponseFeedback: {},
-              score: 1,
-            },
-            metadata: {
-              deliveryTarget: "",
-              packageSiteName: "noordhoff-test-site",
-              packageClass: "package",
-              businessUnit: "Noordhoff",
-              discipline: "Engels",
-              edition: ["2"],
-              grade: ["VO"],
-              method: "Componentenboek [method]",
-              schoolType: ["havo"],
-              targetAudienceLanguage: "nl-NL",
-              targetYear: ["1"],
-              vocabularyForeignLanguage: "",
-              vocabularyLocalLanguage: "",
-              endUser: ["learner"],
-              isSelfAssessment: false,
-              strictSpelling: false,
-              evaluation: true,
-              assets: [],
-            },
-          },
         },
       ],
+      __typename: "ContentSet",
     },
   ],
   metadata: {

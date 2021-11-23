@@ -1,5 +1,5 @@
-import { Breadcrumb } from "./Breadcrumb";
+import { Breadcrumb } from './Breadcrumb'
 
 export interface DiscoType {
-  breadcrumbs?: Breadcrumb[] | null;
+  breadcrumbs?: Breadcrumb[] | null
 }
