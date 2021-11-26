@@ -5,6 +5,7 @@ import deepcopy from "deepcopy";
 import { v4 } from "uuid";
 import { ContentSet } from "./model/ContentSet";
 import { ContentUnit } from "./model/ContentUnit";
+import { Particle } from "@infinitas/app-player";
 
 export const swapElements = <T>(arr: T[], index1: number, index2: number) => {
   [arr[index1], arr[index2]] = [arr[index2], arr[index1]];

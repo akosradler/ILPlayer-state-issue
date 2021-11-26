@@ -29,10 +29,11 @@ const Player = ({ item }: any): JSX.Element => {
     []
   );
 
-  const handleOnNext = useCallback(() => {
+  const handleOnNext = useCallback(async () => {
     if (isOnInstructionPage) {
       setNotInstructionPage();
     }
+    await new Promise((res) => setTimeout(() => res("p1"), 10));
     setIsSubmitted(() => false);
     playerNavigator?.next();
   }, [isOnInstructionPage, playerNavigator, setNotInstructionPage]);
@@ -53,7 +54,9 @@ const Player = ({ item }: any): JSX.Element => {
             generalDrillingItem.contentSets[playerNavigator.current];
 
           if (currentContentSet?.content) {
-            externalHandlers.submitAnswer(currentContentSet.content[0].id);
+            externalHandlers.submitAnswer(
+              (currentContentSet.content[0].playerPayload as unknown as any).id
+            );
           }
         }
       }
@@ -72,7 +75,8 @@ const Player = ({ item }: any): JSX.Element => {
   ]);
 
   // This is necessary, in order to sync back the Player's React context to the App's
-  const handleOnSubmitAnswer = (event: AnswerEventProps) => {
+  const handleOnSubmitAnswer = async (event: AnswerEventProps) => {
+    console.log(event);
     setIsSubmitted(() => true);
   };
 
@@ -107,8 +111,6 @@ const Player = ({ item }: any): JSX.Element => {
           id={"constId"}
           key={"constKey"}
           config={{
-            superSubmitButton: SlimStampenSuperSubmitButton,
-            submitButton: null,
             collectData: true,
             retryConfig: {
               textEntry: 0,
@@ -121,9 +123,12 @@ const Player = ({ item }: any): JSX.Element => {
           listeners={listeners}
         />
       ) : null}
-      {isSubmitted ? (
+      {!isOnInstructionPage ? (
         <p>
-          Submitted, but the button's text doesn't change on keyboard navigation
+          Submit and Submit All buttons are both disabled, however when you
+          press enter, the non-existent answer can still be submitted. The Next
+          button is also disabled, but the Player can still be forced to
+          navigate via the enter key.
         </p>
       ) : null}
     </>
